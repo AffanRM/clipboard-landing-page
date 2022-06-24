@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Top container styling */
+.top-container{
+    background-image: url("images/bg-header-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 6rem 0;
+}
+.download-button{
+    padding: 0.8rem 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 1.6rem;
+    font-size: 1rem;
+}
+.ios-button{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac-button{
+    background-color: hsl(233, 100%, 69%);
+    margin-left: 14px;
+}
+.download-button:hover{
+    cursor: pointer;
+}
+.ios-button:hover{
+    background-color: hsl(171, 65%, 58%);
+}
+.mac-button:hover{
+    background-color: hsl(233, 92%, 77%);
+}
+.top-heading{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.top-para{
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: hsl(201, 11%, 66%);
+}
+
+/* Second container styling */
+.second-container{
+    text-align: center;
+    padding: 2rem 0;
+}
+.second-container p{
+    width: 40rem;
+    margin: auto;
+    margin-top: 1rem;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 3rem;
+}
+
+/* Third container styling */
+.third-main-container{
+    display: flex;
+}
+.third-secondary-container{
+    width: 100%;
+}
+.third-secondary-container img{
+    margin-left: -70px;
+    width: 85%;
+}
+.third-secondary-container div{
+    width: 60%;
+    margin-top: 6%;
+}
+.third-secondary-container p{
+    /* color: hsl(201, 11%, 66%); */
+    margin-top: 0.7rem;
+}
+
+/* Fourth container styling */
+.fourth-container{
+    text-align: center;
+    padding: 4% 0;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+.fourth-container p{
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: hsl(201, 11%, 66%);
+}
+.fourth-container img{
+    width: 75%;
+}
+
+/* Fifth container styling */
+.fifth-container{
+    text-align: center;
+    margin: 2% 0;
+    margin-bottom: 13%;
+}
+.fifth-container p, .seventh-container p{
+    color: hsl(201, 11%, 66%);
+    margin-top: 1rem;
+}
+.fifth-main-container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    align-items: center;
+}
+.fifth-secondary-container{
+    width: 33%;
+}
+.fifth-secondary-container h2{
+    margin-top: 8%;
+}
+
+/* Sixth container styling */
+.sixth-container{
+    display: flex;
+    align-items: center;
+    margin-top: -8%;
+    margin-bottom: 10%;
+}
+.sixth-container div{
+    margin-top: 8%;
+    width: 20%;
+    text-align: center;
+}
+
+/* Seventh container styling */
+.seventh-container{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 7%;
+    text-align: center;
+}
+.seventh-container p{
+    margin-bottom: 5%;
+}
+
+/* Footer section styling */
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0, 24%, 96%);
+    padding: 2% 0;
+}
+.footer-container-2{
+    width: 500px;
+}
+.span-container{
+    display: flex;
+    justify-content: space-between;
+}
+.span-container span:hover{
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+.icons-container{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sm-svg:hover{
+    cursor: pointer;
+}
+.sm-svg:hover > .sm-path{
+    fill: hsl(171, 66%, 44%);
+}
+#footer-logo{
+    width: 64px;
+    height: 64px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1342px) {
+    .third-secondary-container img{
+        height: 100%;
+        width: 100%;
+    }
+    .fifth-main-container{
+        width: 90%;
+    }
+    .third-secondary-container div{
+        width: 80%;
+    }
+    .seventh-container{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .fifth-main-container{
+        width: 100%;
+    }
+    .sixth-container{
+        flex-wrap: wrap;
+    }
+    .sixth-container div{
+        width: 33%;
+    }
+}
+@media screen and (max-width: 934px) {
+    .footer-container-2{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 794px) {
+    .third-secondary-container div{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .third-main-container{
+        display: block;
+        text-align: center;
+    }
+    .third-secondary-container{
+        width: 90%;
+        margin: auto;
+    }
+    .third-secondary-container img{
+        margin: 0;
+    }
+    .third-secondary-container div{
+        width: 100%;
+        margin-top: 18%;
+    }
+    .top-para, .top-heading{
+        width: 90%;
+    }
+    .top-heading{
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .second-container{
+        width: 90%;
+        margin: auto;
+    }
+    .second-container p {
+        width: 100%;
+    }
+    .fourth-container{
+        width: 90%;
+        margin: auto;
+        margin-top: 30%;
+        margin-bottom: 15%;
+    }
+    .fourth-container p, .fourth-container img{
+        width: 100%;
+    }
+    .fifth-container{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+    .fifth-container p{
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .fifth-main-container{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .fifth-secondary-container{
+        width: 100%;
+        margin-top: 20%;
+    }
+    .seventh-container{
+        width: 90%;
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+    .footer-section{
+        display: block;
+        padding: 7% 0;
+        text-align: center;
+    }
+    .footer-section div{
+        margin: auto;
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .download-button{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-top: 6%;
+        padding: 1.2rem 0;
+        border-radius: 2rem;
+    }
+    .sixth-container{
+        display: block;
+        margin-top: 30%;
+        width: 90%;
+    }
+    .sixth-container div{
+        margin: auto;
+        margin-top: 8%;
+        text-align: left;
+    }
+    .footer-container-2{
+        display: block;
+    }
+    .span-container{
+        display: block;
+    }
+    .span-container span{
+        display: block;
+        margin-top: 6%;
+    }
+    .footer-container-2{
+        width: 90%;
+    }
+    
+}
